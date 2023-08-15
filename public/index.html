@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+		<!-- main css -->
+		<link rel="stylesheet" href="./style.css" />
+		<link rel="stylesheet" href="./tailwind.css" />
+
+		<title>MEDDICAL</title>
+	</head>
+	<body>
+		<div class="page-home">
+			<div class="search-box container">
+				<span class="close-search cursor-pointer float-right mt-2">
+					<svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<path
+							d="M12.4948 10L19.478 3.01684C19.8094 2.68601 19.9958 2.23707 19.9962 1.76879C19.9966 1.3005 19.811 0.851233 19.4802 0.519814C19.1494 0.188395 18.7004 0.00197318 18.2321 0.00155962C17.7638 0.00114607 17.3146 0.186774 16.9832 0.517609L10 7.50077L3.01684 0.517609C2.68542 0.18619 2.23592 0 1.76723 0C1.29853 0 0.849028 0.18619 0.517609 0.517609C0.18619 0.849028 0 1.29853 0 1.76723C0 2.23592 0.18619 2.68542 0.517609 3.01684L7.50077 10L0.517609 16.9832C0.18619 17.3146 0 17.7641 0 18.2328C0 18.7015 0.18619 19.151 0.517609 19.4824C0.849028 19.8138 1.29853 20 1.76723 20C2.23592 20 2.68542 19.8138 3.01684 19.4824L10 12.4992L16.9832 19.4824C17.3146 19.8138 17.7641 20 18.2328 20C18.7015 20 19.151 19.8138 19.4824 19.4824C19.8138 19.151 20 18.7015 20 18.2328C20 17.7641 19.8138 17.3146 19.4824 16.9832L12.4948 10Z"
+							fill="white"
+						/>
+					</svg>
+				</span>
+				<form action="#">
+					<div class="relative">
+						<input type="text" class="input-search" placeholder="looking for something..." />
+						<button type="submit" class="btn-search">
+							<svg
+								width="22"
+								height="22"
+								viewBox="0 0 22 22"
+								fill="none"
+								xmlns="http://www.w3.org/2000/svg"
+							>
+								<path
+									d="M9.88894 18.7779C14.7982 18.7779 18.7779 14.7982 18.7779 9.88894C18.7779 4.97971 14.7982 1 9.88894 1C4.97971 1 1 4.97971 1 9.88894C1 14.7982 4.97971 18.7779 9.88894 18.7779Z"
+									stroke="#FCFEFE"
+									stroke-width="2"
+									stroke-linecap="round"
+									stroke-linejoin="round"
+								/>
+								<path
+									d="M21.0004 21.0001L16.167 16.1667"
+									stroke="#FCFEFE"
+									stroke-width="2"
+									stroke-linecap="round"
+									stroke-linejoin="round"
+								/>
+							</svg>
+						</button>
+					</div>
+				</form>
+			</div>
+			<header>
+				<div class="desktop-hide">
+					<div class="header-top">
+						<div class="container">
+							<div class="nav-top-items flex flex-wrap justify-around items-center pb-3">
+								<div class="nav-top-item flex flex-row">
+									<div class="flex items-center pr-4">
+										<svg
+											width="23"
+											height="22"
+											viewBox="0 0 23 22"
+											fill="none"
+											xmlns="http://www.w3.org/2000/svg"
+										>
+											<path
+												d="M13.8155 18.9536C14.1482 18.7615 14.3901 18.4435 14.4879 18.0695C14.5857 17.6955 14.5314 17.2963 14.337 16.9595L13.6039 15.6897C13.4095 15.353 13.0908 15.1063 12.7181 15.0041C12.3453 14.9018 11.9489 14.9522 11.6162 15.1443C9.10699 16.593 7.64082 14.0535 6.90773 12.7838C6.17464 11.5141 4.70847 8.97456 7.21767 7.52587C7.55041 7.33377 7.79229 7.01575 7.89009 6.64178C7.98789 6.26782 7.93361 5.86854 7.73918 5.53178L7.00609 4.26204C6.81167 3.92528 6.49302 3.67863 6.12026 3.57635C5.74749 3.47406 5.35115 3.52453 5.0184 3.71664C1.8819 5.5275 0.733088 7.88376 4.39853 14.2325C8.06397 20.5812 10.679 20.7644 13.8155 18.9536Z"
+												stroke="#1F2B6C"
+												stroke-width="1.5"
+												stroke-linecap="round"
+												stroke-linejoin="round"
+											/>
+											<path
+												d="M20.4925 13.7102C21.159 11.1565 20.7876 8.43049 19.4601 6.13119C18.1326 3.83188 15.9575 2.14732 13.4127 1.4476M16.6513 12.6562C16.8499 11.8977 16.8975 11.1058 16.7915 10.3257C16.6855 9.54555 16.428 8.79245 16.0337 8.10944C15.6394 7.42642 15.1159 6.82686 14.4933 6.34501C13.8706 5.86316 13.161 5.50846 12.4049 5.30118M12.8308 11.5945C12.964 11.0835 12.8896 10.5381 12.624 10.078C12.3584 9.61794 11.9232 9.28084 11.4141 9.14072"
+												stroke="#159EEC"
+												stroke-width="1.5"
+												stroke-linecap="round"
+												stroke-linejoin="round"
+											/>
+										</svg>
+									</div>
+									<div class="flex flex-col">
+										<span class="uppercase text-sm text-primary font-medium">emergency</span>
+										<span class="text-sm text-secondary font-medium">(237) 681-812-255</span>
+									</div>
+								</div>
+								<div class="nav-top-item flex flex-row">
+									<div class="flex items-center pr-4">
+										<svg
+											width="19"
+											height="23"
+											viewBox="0 0 19 23"
+											fill="none"
+											xmlns="http://www.w3.org/2000/svg"
+										>
+											<path
+												d="M1 9.23919C1 17.4784 9.58249 21.598 9.58249 21.598C9.58249 21.598 18.165 17.4784 18.165 9.23919C18.165 4.69047 14.3243 1 9.58249 1C4.84067 1 1 4.69047 1 9.23919Z"
+												stroke="#1F2B6C"
+												stroke-width="1.5"
+											/>
+											<path
+												d="M9.58226 12.0542C11.2128 12.0542 12.5346 10.7323 12.5346 9.10179C12.5346 7.47124 11.2128 6.14941 9.58226 6.14941C7.95171 6.14941 6.62988 7.47124 6.62988 9.10179C6.62988 10.7323 7.95171 12.0542 9.58226 12.0542Z"
+												stroke="#159EEC"
+												stroke-width="1.5"
+											/>
+										</svg>
+									</div>
+									<div class="flex flex-col">
+										<span class="uppercase text-sm text-primary font-medium">location</span>
+										<span class="text-sm text-secondary font-medium">0123 Some Place</span>
+									</div>
+								</div>
+								<div class="nav-top-item flex flex-row">
+									<div class="flex items-center pr-4">
+										<svg
+											width="19"
+											height="19"
+											viewBox="0 0 19 19"
+											fill="none"
+											xmlns="http://www.w3.org/2000/svg"
+										>
+											<path
+												d="M9.58249 18.165C14.3225 18.165 18.165 14.3225 18.165 9.58249C18.165 4.84251 14.3225 1 9.58249 1C4.84251 1 1 4.84251 1 9.58249C1 14.3225 4.84251 18.165 9.58249 18.165Z"
+												stroke="#1F2B6C"
+												stroke-width="1.5"
+												stroke-linecap="round"
+											/>
+											<path
+												d="M12.4434 13.8738L9.58252 9.5825V3.86084"
+												stroke="#159EEC"
+												stroke-width="1.5"
+												stroke-linecap="round"
+											/>
+										</svg>
+									</div>
+									<div class="flex flex-col">
+										<span class="uppercase text-sm text-primary font-medium">work hour</span>
+										<span class="text-sm text-secondary font-medium">9:00 - 20:00 Everyday</span>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<nav class="bg-primary relative">
+						<div class="container">
+							<div class="flex justify-between items-center py-5">
+								<a href="#">
+									<img src="./img/logo/Meddical.png" alt="logo" />
+								</a>
+								<div class="flex flex-row justify-between items-center">
+									<div class="search mr-4 cursor-pointer">
+										<svg
+											width="22"
+											height="22"
+											viewBox="0 0 22 22"
+											fill="none"
+											xmlns="http://www.w3.org/2000/svg"
+										>
+											<path
+												d="M9.88894 18.7779C14.7982 18.7779 18.7779 14.7982 18.7779 9.88894C18.7779 4.97971 14.7982 1 9.88894 1C4.97971 1 1 4.97971 1 9.88894C1 14.7982 4.97971 18.7779 9.88894 18.7779Z"
+												stroke="#FCFEFE"
+												stroke-width="2"
+												stroke-linecap="round"
+												stroke-linejoin="round"
+											/>
+											<path
+												d="M21.0004 21.0001L16.167 16.1667"
+												stroke="#FCFEFE"
+												stroke-width="2"
+												stroke-linecap="round"
+												stroke-linejoin="round"
+											/>
+										</svg>
+									</div>
+									<div class="toggle cursor-pointer">
+										<svg
+											class="show"
+											width="24"
+											height="18"
+											viewBox="0 0 24 18"
+											fill="none"
+											xmlns="http://www.w3.org/2000/svg"
+										>
+											<path
+												fill-rule="evenodd"
+												clip-rule="evenodd"
+												d="M24 15.0001V17.4001H0V15.0001H24ZM24 7.8001V10.2001H0V7.8001H24ZM24 0.600098V3.0001H0V0.600098H24Z"
+												fill="#FCFEFE"
+											/>
+										</svg>
+										<svg
+											class="close"
+											width="20"
+											height="20"
+											viewBox="0 0 20 20"
+											fill="none"
+											xmlns="http://www.w3.org/2000/svg"
+										>
+											<path
+												d="M12.4948 10L19.478 3.01684C19.8094 2.68601 19.9958 2.23707 19.9962 1.76879C19.9966 1.3005 19.811 0.851233 19.4802 0.519814C19.1494 0.188395 18.7004 0.00197318 18.2321 0.00155962C17.7638 0.00114607 17.3146 0.186774 16.9832 0.517609L10 7.50077L3.01684 0.517609C2.68542 0.18619 2.23592 0 1.76723 0C1.29853 0 0.849028 0.18619 0.517609 0.517609C0.18619 0.849028 0 1.29853 0 1.76723C0 2.23592 0.18619 2.68542 0.517609 3.01684L7.50077 10L0.517609 16.9832C0.18619 17.3146 0 17.7641 0 18.2328C0 18.7015 0.18619 19.151 0.517609 19.4824C0.849028 19.8138 1.29853 20 1.76723 20C2.23592 20 2.68542 19.8138 3.01684 19.4824L10 12.4992L16.9832 19.4824C17.3146 19.8138 17.7641 20 18.2328 20C18.7015 20 19.151 19.8138 19.4824 19.4824C19.8138 19.151 20 18.7015 20 18.2328C20 17.7641 19.8138 17.3146 19.4824 16.9832L12.4948 10Z"
+												fill="white"
+											/>
+										</svg>
+									</div>
+								</div>
+							</div>
+						</div>
+						<aside class="site-off desktop-hide bg-accent">
+							<div class="flex justify-center flex-col">
+								<ul class="nav-links flex flex-col justify-center items-center">
+									<li><a href="#">Home</a></li>
+									<li><a href="#">About us</a></li>
+									<li><a href="#">Services</a></li>
+									<li><a href="#">Doctor</a></li>
+									<li><a href="#">News</a></li>
+									<li><a href="#">Contact</a></li>
+								</ul>
+
+								<div class="group-right flex flex-row justify-center items-center">
+									<a href="#" class="button button-primary custom-size">Appoinment</a>
+								</div>
+							</div>
+						</aside>
+					</nav>
+				</div>
+				<div class="mobile-hide">
+					<div class="nav-top">
+						<div class="container">
+							<div class="wrapper flex flex-row justify-between items-center">
+								<a href="#">
+									<img src="./img/logo/Meddical-desktop.png" alt="logo" />
+								</a>
+								<div class="nav-top-items flex flex-wrap justify-around items-center">
+									<div class="nav-top-item flex flex-row pr-5">
+										<div class="flex items-center pr-2">
+											<svg
+												width="41"
+												height="39"
+												viewBox="0 0 41 39"
+												fill="none"
+												xmlns="http://www.w3.org/2000/svg"
+											>
+												<path
+													d="M24.1459 33.1262C24.7274 32.7905 25.1502 32.2347 25.3211 31.5811C25.492 30.9275 25.3972 30.2296 25.0574 29.6411L23.7761 27.4219C23.4363 26.8333 22.8794 26.4022 22.2279 26.2235C21.5764 26.0447 20.8837 26.1329 20.3021 26.4687C15.9167 29.0006 13.3542 24.5622 12.0729 22.343C10.7917 20.1238 8.22919 15.6854 12.6146 13.1535C13.1962 12.8178 13.6189 12.2619 13.7899 11.6084C13.9608 10.9548 13.8659 10.2569 13.5261 9.66835L12.2449 7.44916C11.905 6.8606 11.3481 6.42952 10.6966 6.25075C10.0451 6.07199 9.35243 6.16019 8.77089 6.49594C3.28908 9.66086 1.28125 13.779 7.6875 24.875C14.0938 35.9709 18.6641 36.2911 24.1459 33.1262Z"
+													stroke="#1F2B6C"
+													stroke-width="2"
+													stroke-linecap="round"
+													stroke-linejoin="round"
+												/>
+												<path
+													d="M35.8156 23.9621C36.9804 19.4989 36.3314 14.7346 34.0113 10.716C31.6911 6.69743 27.8896 3.75324 23.442 2.53032M29.1022 22.12C29.4492 20.7945 29.5325 19.4104 29.3472 18.0469C29.162 16.6835 28.712 15.3672 28.0227 14.1735C27.3335 12.9798 26.4187 11.9319 25.3305 11.0897C24.2423 10.2476 23.002 9.62766 21.6806 9.26539M22.4248 20.2645C22.6577 19.3714 22.5278 18.4181 22.0635 17.6141C21.5993 16.81 20.8387 16.2208 19.9488 15.9759"
+													stroke="#159EEC"
+													stroke-width="2"
+													stroke-linecap="round"
+													stroke-linejoin="round"
+												/>
+											</svg>
+										</div>
+										<div class="flex flex-col">
+											<span class="uppercase text-sm text-primary font-medium">emergency</span>
+											<span class="text-sm text-secondary font-medium">(237) 681-812-255</span>
+										</div>
+									</div>
+									<div class="nav-top-item flex flex-row pr-5">
+										<div class="flex items-center pr-2">
+											<svg
+												width="33"
+												height="32"
+												viewBox="0 0 33 32"
+												fill="none"
+												xmlns="http://www.w3.org/2000/svg"
+											>
+												<path
+													d="M16.6777 31C24.962 31 31.6777 24.2843 31.6777 16C31.6777 7.71573 24.962 1 16.6777 1C8.39346 1 1.67773 7.71573 1.67773 16C1.67773 24.2843 8.39346 31 16.6777 31Z"
+													stroke="#1F2B6C"
+													stroke-width="2"
+													stroke-linecap="round"
+												/>
+												<path
+													d="M21.6777 23.5L16.6777 16V6"
+													stroke="#159EEC"
+													stroke-width="2"
+													stroke-linecap="round"
+												/>
+											</svg>
+										</div>
+										<div class="flex flex-col">
+											<span class="uppercase text-sm text-primary font-medium">work hour</span>
+											<span class="text-sm text-secondary font-medium"
+												>9:00 - 20:00 Everyday</span
+											>
+										</div>
+									</div>
+									<div class="nav-top-item flex flex-row">
+										<div class="flex items-center pr-2">
+											<svg
+												width="33"
+												height="39"
+												viewBox="0 0 33 39"
+												fill="none"
+												xmlns="http://www.w3.org/2000/svg"
+											>
+												<path
+													d="M1.35547 15.4C1.35547 29.8 16.3555 37 16.3555 37C16.3555 37 31.3555 29.8 31.3555 15.4C31.3555 7.45 24.643 1 16.3555 1C8.06797 1 1.35547 7.45 1.35547 15.4Z"
+													stroke="#1F2B6C"
+													stroke-width="2"
+												/>
+												<path
+													d="M16.3553 20.32C19.2051 20.32 21.5153 18.0098 21.5153 15.16C21.5153 12.3102 19.2051 10 16.3553 10C13.5055 10 11.1953 12.3102 11.1953 15.16C11.1953 18.0098 13.5055 20.32 16.3553 20.32Z"
+													stroke="#159EEC"
+													stroke-width="2"
+												/>
+											</svg>
+										</div>
+										<div class="flex flex-col">
+											<span class="uppercase text-sm text-primary font-medium">location</span>
+											<span class="text-sm text-secondary font-medium">0123 Some Place</span>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<nav class="bg-primary flex justify-between items-center py-5">
+						<div class="container">
+							<div class="flex justify-between flex-row">
+								<ul class="nav-links flex flex-row text-white justify-center items-center">
+									<li><a href="#">Home</a></li>
+									<li><a href="#">About us</a></li>
+									<li><a href="#">Services</a></li>
+									<li><a href="#">Doctor</a></li>
+									<li><a href="#">News</a></li>
+									<li><a href="#">Contact</a></li>
+								</ul>
+
+								<div class="group-right flex flex-row justify-center items-center">
+									<div class="search mr-4 cursor-pointer">
+										<svg
+											width="22"
+											height="22"
+											viewBox="0 0 22 22"
+											fill="none"
+											xmlns="http://www.w3.org/2000/svg"
+										>
+											<path
+												d="M9.88894 18.7779C14.7982 18.7779 18.7779 14.7982 18.7779 9.88894C18.7779 4.97971 14.7982 1 9.88894 1C4.97971 1 1 4.97971 1 9.88894C1 14.7982 4.97971 18.7779 9.88894 18.7779Z"
+												stroke="#FCFEFE"
+												stroke-width="2"
+												stroke-linecap="round"
+												stroke-linejoin="round"
+											/>
+											<path
+												d="M21.0004 21.0001L16.167 16.1667"
+												stroke="#FCFEFE"
+												stroke-width="2"
+												stroke-linecap="round"
+												stroke-linejoin="round"
+											/>
+										</svg>
+									</div>
+									<a href="#" class="button button-accent">Appoinment</a>
+								</div>
+							</div>
+						</div>
+					</nav>
+				</div>
+			</header>
+
+			<main>
+				<div></div>
+			</main>
+			<div class="overlay"></div>
+		</div>
+		<script src="./main.js"></script>
+	</body>
+</html>
